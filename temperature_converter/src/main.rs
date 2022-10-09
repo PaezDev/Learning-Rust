@@ -41,7 +41,7 @@ fn f_to_c() -> f32 {
     let input: f32 = input
         .trim()
         .parse()
-        .expect("Unable to convert to integer");
+        .expect("Unable to convert to float");
 
     let fahrenheit = input;
 
@@ -62,7 +62,7 @@ fn c_to_f() -> f32 {
     let input: f32 = input
         .trim()
         .parse()
-        .expect("Unable to convert to integer");
+        .expect("Unable to convert to float");
    
     let celsius = input;
 
