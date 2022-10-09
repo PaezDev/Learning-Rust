@@ -19,4 +19,18 @@ fn main() {
     else {
         println!("Value is greater than {}", 20);
     }
+
+    if_in_let()
+}
+
+fn if_in_let() -> () {
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+    
+    println!();
+    println!("The value of another (unrelated) number is: {number}");
+
+    let another_condition = true;
+    let num = if another_condition { 5 } else { "six" };    // will result in an error, the 'if' and 'else' arms
+                                                            // have value types that are incompatible
 }
