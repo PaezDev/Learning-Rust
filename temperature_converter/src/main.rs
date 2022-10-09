@@ -47,7 +47,7 @@ fn f_to_c() -> f32 {
 
     print!("\t\t\t{fahrenheit} Fahrenheit = ");
 
-    (fahrenheit - 32.0) * (0.55555556)
+    (fahrenheit - 32.0) * 0.555_555_6
 }
 
 fn c_to_f() -> f32 {
