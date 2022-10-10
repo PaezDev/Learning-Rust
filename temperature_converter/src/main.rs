@@ -15,16 +15,15 @@ fn main() {
             .trim()
             .parse()
             .expect("Unable to convert to integer");
-
-        if input == 1 {
-            println!("{} Celsius\n\n", f_to_c());
-        } else if input == 2 {
-            println!("{} Fahrenheit\n\n", c_to_f());
-        } else if input == 3 {
-            println!("\t\t\t      Goodbye!!\n");
-            quit::with_code(0);
-        } else {
-            println!("\n\t\t\t {input} is invalid input.\n");
+        
+        match input {
+            1 => println!("{} Celsius\n\n", f_to_c()),
+            2 => println!("{} Fahrenheit\n\n", c_to_f()),
+            3 => {
+                    println!("\t\t\t      Goodbye!!\n");
+                    quit::with_code(0)
+            } 
+            _ => println!("\n\t\t\t {input} is invalid input.\n"),
         }
     }
 }
