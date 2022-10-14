@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
 
@@ -38,8 +40,6 @@ Following section is for slice syntax reference
 
 -----------------------------------------------
 */
-
-#[allows(dead_code)]
 
 fn main1() {
     let s = String::from("hello world");
